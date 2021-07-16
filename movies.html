@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Movies</title>
+    <!-- <link rel="stylesheet" href="movie.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- NAVGATION -->
+        <main>
+            <nav>
+                <div class="logo"> 
+                  <a href="index.html"><img src="images/365.jpg " alt=""></a> </div>
+                <div class="nav_link">
+                    <ul class="nav_links">
+                        <li><a href="movies.html">Movies</a> </li>
+                        <li><a href="movies.html">TV Series</a> </li>
+                        <li><a href="movies.html">Audio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+
+        <!-- slider -->
+        <div class="container cont"> 
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active img">
+                <img src="images/999107.jpg" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="images/jungle.jpg" alt="Chicago" style="width:100%;">
+              </div>
+            
+              <div class="item">
+                <img src="images/moana.jpg" alt="New york" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="images/jack_back.jpg" alt="New york" style="width:100%;">
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+<!-- Search functionality -->
+<section class="section search-fun">
+    
+                 
+                    <div class="dropdown">
+                        <form>
+                            <select id="mySelect" onclick="myFunction()"> Genre
+                                <div class="dropdown-content">
+                                  <option value="All">All </option>
+                                  <option value="Action">Action</option>
+                                  <option value="Drama">Drama</option>
+                                  <option value="Scifi">Sci-Fi</option>
+                                </div>
+                            </select>
+                          </form>
+                      </div>
+                    <div class="seach-box">
+                        <input type="search" name="search" id="search" onkeyup="search()" class="search-txt" placeholder="Search your favorite movie title ">
+                         <!-- <i class="fa fa-user icon"> </i> -->
+                    </div>
+
+                      
+
+</section>
+
+ <!-- <section class="action" id="action">
+    <div class="row">
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/irom.jpg" alt="...">
+                        <div class="overview">
+                          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/deadpool.jpg" alt="...">
+                        <div class="overview">
+                         <h6 class="movie_name">DEAD POOL</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/john.jpg" alt="...">
+                        <div class="overview">
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/sherlock.jpg" alt="...">
+                        <div class="overview">
+                          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+   </div>
+
+   <div class="row">
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/fury.jpg" alt="...">
+                        <div class="overview">
+         one of the best Sci-Fi Movie
+        </div>
+         <div class="overview">
+           one of the best Sci-Fi Movie
+          </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/thor.jpg" alt="...">
+                        <div class="overview">
+                          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/titanic.jpg" alt="...">
+                        <div class="overview">
+                          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+
+     <div class="col-xs-6 col-md-3">
+       <a href="#" class="thumbnail">
+         <img src="images/action/ww84.jpg" alt="...">
+                        <div class="overview">
+                          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+       </a>
+     </div>
+   </div>
+  </section>
+
+  <section class="action drama" id="drama">
+
+   <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/drama/4941f7314028a75844c6d6b5367b1d6d.jpg" alt="...">
+                       <div class="overview">
+                         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/drama/8629c9b88e49c835fa2171e4c2f88129.jpg" alt="...">
+                       <div class="overview">
+                        <h6 class="movie_name">DEAD POOL</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/drama/98a52f9a88d31522a90565a99bf80f80.jpg" alt="...">
+                       <div class="overview">
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/drama/c2fe900b569416b252d48bd9ee8840df.jpg" alt="...">
+                       <div class="overview">
+                         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/drama/c94cb6d1085632cc48df96e1fc80389e.jpg" alt="...">
+                       <div class="overview">
+        one of the best Sci-Fi Movie
+       </div>
+        <div class="overview">
+          one of the best Sci-Fi Movie
+         </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/action/thor.jpg" alt="...">
+                       <div class="overview">
+                         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/action/titanic.jpg" alt="...">
+                       <div class="overview">
+                         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/action/ww84.jpg" alt="...">
+                       <div class="overview">
+                         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+  </div>
+ </section>
+
+  <section class="action sci-fi" id="scifi">
+
+   <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/district_9.jpg" alt="...">
+   <div class="overview">
+     <h6 class="movie_name">IRON MAN</h6>
+      one of the best Sci-Fi Movie
+     </div>
+      </a>
+
+   </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/intersteller.jpg" alt="...">
+        <div class="overview">
+         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/life.jpg" alt="...">
+        <div class="overview">
+         <h6 class="movie_name">IRON MAN</h6>
+        one of the best Sci-Fi Movie
+       </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/lost_in_space.jpg" alt="...">
+        <div class="overview">
+          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/martian.jpg" alt="...">
+        <div class="overview">
+          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/platform.jpg" alt="...">
+        <div class="overview">
+          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/sci-fi/wandering_earth.jpg" alt="...">
+        <div class="overview">
+          <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="images/action/ww84.jpg" alt="...">
+        <div class="overview">
+         <h6 class="movie_name">IRON MAN</h6>
+         one of the best Sci-Fi Movie
+        </div>
+      </a>
+    </div>
+  
+   </div>
+
+ </section>  -->
+ <div class="action" id="action">
+     <div class="row" id="row">
+
+     </div>
+ </div>
+
+
+    <!-- <div class="container" id="container">
+        <h3>Movies will show here</h3>
+
+    </div> -->
+    <footer>
+      <div class="footer_content1">
+        <div class="logo">
+          <img src="images/365.jpg" alt="">
+        </div>
+        <div class="copyright">
+          <h5>Powered by 365 Entertainment Portal 2019. All Rights Reserved.</h5>
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
